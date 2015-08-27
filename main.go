@@ -6,7 +6,7 @@ import (
 
 var (
 	debug = kingpin.Flag("debug", "Enable debug mode.").Short('d').Bool()
-	tags  = kingpin.Flag("tags", "Retrieve tags instead of definition").Short('t').Bool()
+	synonyms  = kingpin.Flag("synonyms", "Retrieve synonyms instead of definition").Short('s').Bool()
 	word  = kingpin.Arg("word", "Word to do.").Required().String()
 )
 

@@ -55,8 +55,8 @@ func getDefinitions(w string) (data, error) {
 		return d, err
 	}
 
-	if *tags == true && len(d.Tags) < 1 {
-		return d, errors.New("No tags found")
+	if *synonyms == true && len(d.Tags) < 1 {
+		return d, errors.New("No synonyms found")
 	}
 
 	printDebug("Checking if there are any definitions")

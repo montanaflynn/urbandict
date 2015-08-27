@@ -22,7 +22,7 @@ func startUrbanDict() {
 		return
 	}
 
-	if *tags == true {
+	if *synonyms == true {
 		count = len(def.Tags)
 	} else {
 		count = len(def.List)
@@ -37,7 +37,7 @@ func startUrbanDict() {
 }
 
 func display(d data, i int) {
-	if *tags == true {
+	if *synonyms == true {
 		displayTag(d, i)
 	} else {
 		displayDefinition(d, i)
